@@ -1,0 +1,278 @@
+.lds-ripple {
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.lds-ripple div {
+	margin-top: 40vh;
+	margin-left: 45%;
+	position: absolute;
+	border: 4px solid #cef;
+	opacity: 1;
+	border-radius: 50%;
+	animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+	animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+	0% {
+		top: 28px;
+		left: 28px;
+		width: 0;
+		height: 0;
+		opacity: 1;
+	}
+
+	100% {
+		top: -1px;
+		left: -1px;
+		width: 58px;
+		height: 58px;
+		opacity: 0;
+	}
+}
+
+body.loading {
+	overflow: hidden;
+}
+
+body.loading .lds-ripple {
+	display: block;
+}
+
+#mostEngaged th,
+#leastEngaged th,
+#leastLoyal th,
+#mostLoyal th {
+	background-color: rgb(199, 211, 214);
+	height: 40px;
+	font-family: sans-serif;
+}
+#mostEngaged a,
+#leastEngaged a,
+#leastLoyal a,
+#mostLoyal a {
+	color: #fff;
+}
+.tablehead {
+	color: rgb(233, 178, 95);
+	padding: 1.5em;
+	text-align: center;
+	font-size: 20px;
+}
+
+.pagetitle {
+	margin-left: 20px;
+	font-size: 20px;
+}
+
+.ptable {
+	background-color: rgb(233, 178, 95);
+	border-radius: 20px;
+	margin: 20px;
+}
+
+#state {
+	color: rgb(233, 178, 95);
+	margin-right: 20px;
+}
+
+.btn {
+	height: 35px;
+	background: rgb(233, 178, 95);
+	width: 40%;
+	margin-right: 5px;
+}
+.btn:hover {
+	background: rgb(233, 178, 95);
+}
+
+.btn-group {
+	margin-left: 10%;
+	margin-bottom: -6%;
+}
+
+#checkbox {
+	color: rgb(233, 178, 95);
+
+	padding: 20px;
+	text-align: center;
+}
+
+#myDiv {
+	display: none;
+}
+
+.about-container {
+	margin-top: 80px;
+}
+.navbar-toggler {
+	margin-right: 55%;
+}
+.about-container > p {
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+.background-history {
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	color: rgb(233, 178, 95);
+}
+
+.Congressmen {
+	text-align: center;
+	font-family: sans-serif;
+	padding: 20px;
+	margin-right: 100px;
+}
+
+.history {
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+	padding: 20px;
+}
+
+p {
+	padding: 1.5rem;
+	/* text-align: center; */
+	font-size: 17px;
+	font-family: Trebuchet MS;
+	color: #fff;
+}
+
+.about-us {
+	font-family: sans-serif;
+	text-align: center;
+	color: rgb(233, 178, 95);
+}
+
+.home-logo {
+	float: right;
+	border-radius: 50%;
+}
+
+.logo {
+	margin-right: 800px;
+	width: 60px;
+}
+
+.senators {
+	text-align-last: center;
+	font-family: sans-serif;
+}
+
+#senatorsparagraph {
+	margin: 20px;
+}
+
+.mail {
+	height: 30px;
+}
+
+thead {
+	text-align: center;
+	background-color: rgb(199, 211, 214);
+	font-style: oblique;
+	font-weight: 500;
+}
+
+table {
+	align-content: center;
+	margin-left: 8%;
+	text-align: center;
+	width: 80%;
+}
+
+table td {
+	color: #fff;
+	padding: 30px;
+	border-block-end-style: ridge;
+	/* width: 60%; */
+}
+table th {
+	color: #fff;
+}
+
+.navbar {
+	margin-bottom: 5%;
+}
+
+body {
+	background: #283048; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#859398,
+		#283048
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#859398,
+		#283048
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+h2 {
+	color: #fff;
+}
+#myBtn {
+	margin-left: 2%;
+	background-color: rgb(233, 178, 95);
+	border: 1px solid black;
+	border-style: none;
+	border-radius: 30px;
+}
+table {
+	color: rgb(255, 255, 255);
+}
+#table a {
+	color: rgb(233, 178, 95);
+}
+@media screen and (max-width: 500px) {
+	#GlanceTable,
+	table {
+		margin-left: 0.6rem;
+		width: 10vw;
+		font-size: 0.8em;
+	}
+	.pagetitle {
+		text-align: center;
+	}
+	.leastloyal,
+	table {
+		margin-left: 2.2rem;
+	}
+	#table td {
+		padding: 10px;
+	}
+	#table {
+		margin-left: 5%;
+	}
+	#checkbox label {
+		font-size: 1em;
+	}
+	.form-check {
+		font-size: 0.7em;
+	}
+	#state {
+		margin-top: 4%;
+		margin-left: -7%;
+		margin-bottom: 15%;
+		font-size: 0.8em;
+	}
+	#selectstate {
+		border-style: none;
+		background-color: transparent;
+		width: 5rem;
+		font-size: .8em;
+		color: #fff;
+	}
+}
