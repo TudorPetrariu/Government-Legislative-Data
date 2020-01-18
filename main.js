@@ -1,7 +1,7 @@
 //Global Variables
 
 let members = [];
-if (location.pathname == "/dist/senate-starter-page.html") {
+if (location.pathname == "/Government-Legislative-Data/senate-starter-page.html") {
    url = 'https://api.propublica.org/congress/v1/113/senate/members.json';
 
    getData(url);
