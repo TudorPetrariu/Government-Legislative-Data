@@ -6,7 +6,7 @@ if (location.pathname == "/dist/senate-starter-page.html") {
 
    getData(url);
 }
-if (location.pathname == "/dist/house-starter-page.html") {
+if (location.pathname == "/Government-Legislative-Data/house-starter-page.html") {
    url = 'https://api.propublica.org/congress/v1/113/house/members.json';
 
    getData(url);
