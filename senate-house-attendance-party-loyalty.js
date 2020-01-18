@@ -40,14 +40,14 @@ let table = document.getElementById("GlanceTable");
 
 
 
-if (location.pathname == "/dist/senate-attendance-starter-page.html" || location.pathname == "/dist/senate-party-loyalty-starter-page.html") {
+if (location.pathname == "/Government-Legislative-Data/senate-attendance-starter-page.html" || location.pathname == "/Government-Legislative-Data/senate-party-loyalty-starter-page.html") {
     url = "https://api.propublica.org/congress/v1/113/senate/members.json";
     fetchData(url)
 
 
 }
 
-if (location.pathname == "/dist/house-attendance-starter-page.html" || location.pathname == "/dist/house-party-loyalty-starter-page.html") {
+if (location.pathname == "/Government-Legislative-Data/house-attendance-starter-page.html" || location.pathname == "/Government-Legislative-Data/house-party-loyalty-starter-page.html") {
     url = "https://api.propublica.org/congress/v1/113/house/members.json";
     fetchData(url)
 
@@ -250,14 +250,14 @@ function loyality() {
     }
 
 
-    if (location.pathname == "/dist/house-attendance-starter-page.html" || location.pathname == "/dist/senate-attendance-starter-page.html") {
+    if (location.pathname == "/Government-Legislative-Data/house-attendance-starter-page.html" || location.pathname == "/Government-Legislative-Data/senate-attendance-starter-page.html") {
 
         generateTopTable("mostEngaged", mostEngagedTop)
         generateTopTable("leastEngaged", leastEngagedTop)
 
     }
 
-    if (location.pathname == "/dist/house-party-loyalty-starter-page.html" || location.pathname == "/dist/senate-party-loyalty-starter-page.html") {
+    if (location.pathname == "/Government-Legislative-Data/house-party-loyalty-starter-page.html" || location.pathname == "/Government-Legislative-Data/senate-party-loyalty-starter-page.html") {
 
 
         generateTopTable("leastLoyal", leastLoyalTop)
